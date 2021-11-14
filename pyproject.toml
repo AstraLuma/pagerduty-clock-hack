@@ -7,7 +7,7 @@ license = "AGPL-3.0"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-hypercorn = "^0.12.0"
+hypercorn = {extras = ["uvloop"], version = "^0.12.0"}
 starlette = "^0.17.0"
 
 [tool.poetry.dev-dependencies]
