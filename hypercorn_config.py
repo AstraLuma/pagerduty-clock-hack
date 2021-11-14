@@ -19,7 +19,8 @@ logconfig_dict = {
             "propagate": False,
         },
         "app": {
-            "level": "DEBUG"
+            "level": "DEBUG",
+            "propagate": True,
         },
     },
     "handlers": {
@@ -28,15 +29,10 @@ logconfig_dict = {
             "formatter": "generic",
             "stream": "ext://sys.stdout",
         },
-        "webhook_file": {
-            "class": "logging.FileHandler",
-            "formatter": "generic",
-            "filename": "/tmp/github-webhook",
-        },
     },
     "formatters": {
         "generic": {
-            "format": "%(asctime)s [%(name)s] [%(levelname)s] %(message)s",
+            "format": "[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s",
             "datefmt": "[%Y-%m-%d %H:%M:%S]",
             "class": "logging.Formatter",
         }

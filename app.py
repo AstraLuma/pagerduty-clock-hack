@@ -50,12 +50,13 @@ class IncidentTracker:
 
 
 async def homepage(request):
+    LOG.debug("howdy")
     return JSONResponse('Hello, world!')
 
 
 async def startup():
+    # NOTE: Under hypercorn, logging isn't configured until _after_ this
     global incidents
-    print(LOG)
     incidents = IncidentTracker()
     LOG.info('Ready to go')
 
