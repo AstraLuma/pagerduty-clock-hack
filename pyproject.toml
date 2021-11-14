@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pagerduty-alarm"
+version = "0.1.0"
+description = "Basic webhook-driven PagerDuty noise maker"
+authors = ["Jamie Bliss <jamie@ivyleav.es>"]
+license = "AGPL-3.0"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+hypercorn = "^0.12.0"
+starlette = "^0.17.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
