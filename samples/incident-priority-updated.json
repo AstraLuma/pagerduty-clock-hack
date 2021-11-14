@@ -33,9 +33,9 @@
       },
       "assignees": [
         {
-          "html_url": "https://acme.pagerduty.com/users/PTUXL6G",
-          "id": "PTUXL6G",
-          "self": "https://api.pagerduty.com/users/PTUXL6G",
+          "html_url": "https://acme.pagerduty.com/users/P5KJGS9",
+          "id": "P5KJGS9",
+          "self": "https://api.pagerduty.com/users/P5KJGS9",
           "summary": "User 123",
           "type": "user_reference"
         }
